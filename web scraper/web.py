@@ -45,7 +45,7 @@ def save_to_json(data, filename='scraped_data.json'):
 def main():
     url = input("Enter the URL to scrape (or press Enter for default): ").strip()
     if not url:
-        url = 'http://quotes.toscrape.com/'  # default URL for testing
+        url = ''  # default URL for testing
 
     print(f"Fetching: {url}")
     html = fetch_html(url)
