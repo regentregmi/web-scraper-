@@ -29,9 +29,9 @@ def parse_html(html):
     data['links'] = links
 
     # Extract paragraphs
+    
     paragraphs = [p.get_text(strip=True) for p in soup.find_all('p')]
     data['paragraphs'] = paragraphs
-
     return data
 
 def save_to_json(data, filename='scraped_data.json'):
