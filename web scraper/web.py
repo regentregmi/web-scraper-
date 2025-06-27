@@ -5,7 +5,7 @@ import json
 def fetch_html(url):
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Raises HTTPError for bad responses
+        response.raise_for_status()  # Raises http Error for bad responses
         return response.text
     except requests.RequestException as e:
         print(f"Error fetching the URL: {e}")
