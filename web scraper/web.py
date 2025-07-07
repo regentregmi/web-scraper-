@@ -16,6 +16,7 @@ def parse_html(html):
     data = {}
 
     # Extract headings
+    
     headings = []
     for tag in ['h1', 'h2', 'h3']:
         for heading in soup.find_all(tag):
