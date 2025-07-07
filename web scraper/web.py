@@ -24,6 +24,7 @@ def parse_html(html):
     data['headings'] = headings
 
     # Extract links
+    
     links = []
     for a_tag in soup.find_all('a', href=True):
         links.append({'text': a_tag.get_text(strip=True), 'url': a_tag['href']})
