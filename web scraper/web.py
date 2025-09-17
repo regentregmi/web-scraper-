@@ -57,4 +57,6 @@ def main():
         save_to_json(scraped_data)
 
 if __name__ == '__main__':
+    
     main()
+
